@@ -1,0 +1,14 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+  data:
+    cassandra:
+      local-datacenter: datacenter1
+      keyspaceName: image_repository
+      contactPoints: localhost
+      port: 9042
+      schemaAction: CREATE_IF_NOT_EXISTS
+      username: cassandra
+      password: cassandra
