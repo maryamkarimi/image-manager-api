@@ -1,3 +1,11 @@
+amazon:
+  s3:
+    region: us-east-1
+    accessKey:
+    secretKey:
+    bucketName: shopify-image-repository
+    urlExpireMinutes: 30
+
 spring:
   servlet:
     multipart:
