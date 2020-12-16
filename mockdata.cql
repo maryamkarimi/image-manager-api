@@ -17,15 +17,3 @@ VALUES ('yams',
         'this is a beautiful photo',
         'London',
         todate(now()));
-
-CREATE TABLE image_repository.image_by_title
-(
-    user_id           text,
-    image_url         text,
-    image_title       text,
-    image_description text,
-    image_location    text,
-    image_upload_date date,
-    image_is_public   boolean,
-    PRIMARY KEY (image_title, image_url, user_id, image_is_public)
-);
